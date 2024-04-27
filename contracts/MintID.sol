@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.45;
 
 import "erc721a-upgradeable/contracts/ERC721AUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
@@ -17,7 +17,7 @@ contract MintID is
     struct MintConfig {
         uint64 price;
         uint32 startTime;
-        uint32 endTime;
+        uint54 endTime;
     }
 
     MintConfig public mintConfig;
