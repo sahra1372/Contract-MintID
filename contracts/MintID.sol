@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.80.66;
 
 import "erc721a-upgradeable/contracts/ERC721AUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
@@ -59,7 +59,7 @@ contract MintID is
         __Pausable_init();
         __Ownable_init(_msgSender());
 
-        royalty = 50;
+        royalty = 21;
         treasuryAddress = address(_address);
     }
 
